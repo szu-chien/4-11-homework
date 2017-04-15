@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+div.panel,p.flip1
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.panel
+{
+height:230px;
+display:none;
+}
+</style>
+
+<style type="text/css">
+div.pane2,p.flip2
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.pane2
+{
+height:230px;
+}
+</style>
+
+<style type="text/css">
+div.pane3,p.flip3
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.pane3
+{
+height:230px;
+display:none;
+}
+
+<style type="text/css">
+div.panel,p.flip1
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.panel
+{
+height:230px;
+display:none;
+}
+</style>
+
+<style type="text/css">
+div.pane2,p.flip2
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.pane2
+{
+height:230px;
+}
+</style>
+
+<style type="text/css">
+div.pane3,p.flip3
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+div.pane3
+{
+height:230px;
+display:none;
+}
+
+h { color:green; font-size:4cm; }
+.right
+{
+position:absolute;
+right:100px;
+}
+.left
+{
+position:absolute;
+left:100px;
+
+}
+p1 { color:blue; font-size:1cm; }
+
+
+body {
+text-align: center; /*FOR IE5 專用才會置中*/
+
+}
+
+
+
+</style>
+<style type=text/css>
+
+body{
+
+background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1qgVQNVHALlLlxalPYL9zXiv853S2QhVKByy-P-7o2GiaNAH"); /*背景圖存放路徑*/
+
+background-repeat : repeat; /*背景圖不要重複*/
+
+background-position : 90% 90%; /*放在 x 軸 90% y 軸 90% */
+
+background-attachment : fixed; /*背景固定*/
+
+}
+
+
+</style>
+
+  <head>
+    <meta charset="utf-8">
+    <title>四月十一日作業</title>
+    <h>恐龍樂園</h><br>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+    // show hide
+    $(document).ready(function(){
+  $("#hide").click(function(){
+  $("p1").hide();
+  });
+  $("#show").click(function(){
+  $("p1").show();
+  });
+});
+
+  // toggle
+  $(document).ready(function(){
+  $("buttonT").click(function(){
+  $("p22").toggle();
+  });
+});
+
+//slidedown!!!
+$(document).ready(function(){
+  $(".flip1").click(function(){
+    $(".panel").slideDown("slow");
+  });
+});
+
+//slideup!!!!
+$(document).ready(function(){
+  $(".flip2").click(function(){
+    $(".pane2").slideUp("slow");
+  });
+});
+
+//slidetoggle!!!
+$(document).ready(function(){
+$(".flip3").click(function(){
+    $(".pane3").slideToggle("slow");
+  });
+});
+
+//fadeout
+$(document).ready(function(){
+  $(".btn1").click(function(){
+  $("span3").fadeOut()
+  });
+  $(".btn2").click(function(){
+  $("span3").fadeIn();
+  });
+});
+
+//fadetoggle
+$(document).ready(function(){
+  $("button111").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+
+//fadeto
+$(document).ready(function(){
+  $("button222").click(function(){
+    $("#div4").fadeTo("slow",0.15);
+    $("#div5").fadeTo("slow",0.4);
+    $("#div6").fadeTo("slow",0.7);
+  });
+});
+
+$(document).ready(function(){
+  $("#test").click(function(){
+  $(this).fadeOut(4000);
+  });
+});
+
+</script>
+
+
+
+
+
+</head>
+<body>
+  <p1 id="p1" >四月十一號的作業</p1>
+<button id="hide" type="button" style="width:150px;height:40px;border:4px #9999FF dashed">消失</button>
+<button id="show" type="button" style="width:150px;height:40px;border:4px #9999FF dashed">出現</button>
+<br><br>
+<p22>切換演示</p22>
+<buttonT type="button" style="width:200px;height:60px;border:4px #9999FF dashed">切换</buttonT>
+<br><br>
+<div class="panel">
+<img src="http://dl.stickershop.line.naver.jp/products/0/0/1/1299795/android/stickers/12126378.png">
+</div>
+<p class="flip1">要交作業的前一天</p>
+<div class="pane2">
+<img src="http://dl.stickershop.line.naver.jp/products/0/0/1/1299795/android/stickers/12126399.png">
+</div>
+<p class="flip2">剛拿到作業的時候</p>
+<div class="pane3">
+<img src="http://dl.stickershop.line.naver.jp/products/0/0/1/1299795/android/stickers/12126369.png">
+</div>
+<p class="flip3">如果認真讀書的話</p>
+<br>
+<br>
+<img id="test" src="http://www.lotes.ilc.edu.tw/cyberfair/2005/f_play/p_image/p4_3.jpg"><br>
+<span style="font-size:1cm;">很醜吧 點一點就消失囉</span>
+<br><br>
+<span3 style="font-size:1cm;">Hide and show</span3>
+<button class="btn1" style="width:100px;height:30px;border:4px #9999FF dashed">Hide</button>
+<button class="btn2" style="width:100px;height:30px;border:4px #9999FF dashed">Show</button>
+<br><br>
+
+<button111 style="width:200px;height:80px;border:6px #9999FF dashed">點這邊跟恐龍玩躲貓貓</button111>
+<br><br>
+<img id="div1" src="http://dl.stickershop.line.naver.jp/products/0/0/1/1142501/android/stickers/5811383.png">
+<img id="div2" src="http://dl.stickershop.line.naver.jp/products/0/0/1/1142501/android/stickers/5811383.png">
+<img id="div3" src="http://dl.stickershop.line.naver.jp/products/0/0/1/1142501/android/stickers/5811383.png">
+<br><br>
+<button222 style="width:200px;height:80px;border:6px #9999FF dashed">讓恐龍安德里變淡</button222>
+<br><br>
+<img id="div4" src="http://dl.stickershop.line.naver.jp/products/0/0/1/1299795/android/stickers/12126405.png">
+<img id="div5" src="http://dl.stickershop.line.naver.jp/products/0/0/1/1299795/android/stickers/12126405.png">
+<img id="div6" src="http://dl.stickershop.line.naver.jp/products/0/0/1/1299795/android/stickers/12126405.png">
+  </body>
+</html>
